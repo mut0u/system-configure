@@ -25,7 +25,7 @@ font xft:Zpix 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm   #i3-sensible-terminal
+bindsym $mod+Return exec   i3-sensible-terminal #xterm
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -151,13 +151,14 @@ bindsym $mod+Shift+q exec i3-msg exit
 
 # Assigns #
 assign [class="(?i)xterm"] →  1: terminal
+assign [class="(?i)i3-sensible-terminal"] →  1: terminal
 assign [class="(?i)Chromium"] →  2: web
 assign [class="(?i)emacs"]  →  3: emacs
-
+assign [class="(?i)nautilus"] →  4: file
 
 
 # Startups #
-exec --no-startup-id xterm -e tmux
+#exec --no-startup-id xterm -e tmux
 exec --no-startup-id nm-applet
 #exec --no-startup-id chromium
 
