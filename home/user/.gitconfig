@@ -1,0 +1,20 @@
+[user]
+	name = gaowei
+	email = gaowei@zrcaifu.com
+[alias]
+	br = branch
+	co = checkout
+	st = status
+[push]
+	default = simple
+[core]
+	editor = vim
+
+[mergetool "ediff"]
+	cmd = emacsclient --eval \"(git-mergetool-emacsclient-ediff \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" \\\"$MERGED\\\")\"
+	trustExitCode = false
+[mergetool]
+	prompt = false
+[merge]
+	tool = ediff
+
