@@ -1,4 +1,4 @@
 system-configure
 ================
 
-this is my system configure file for back up
+This is my ubunut system configure file for back up
